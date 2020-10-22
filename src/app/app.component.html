@@ -27,7 +27,7 @@
               type="text"
               class="form-control"
               formControlName = "lastname"
-              [ngClass] = "{'is-invalid':submitted && form.lastname.errors}";
+              [ngClass] = "{'is-invalid':submitted && form.lastname.errors}"
             />
             <div class="text-warning">
               <div>
@@ -42,7 +42,7 @@
             type="text"
             class="form-control"
             formControlName = "email"
-            [ngClass] = "{'is-invalid': submitted && form.email.errors}";
+            [ngClass] = "{'is-invalid': submitted && form.email.errors}"
           />
           <div class="text-warning">
             <div>Email is required</div>
@@ -64,7 +64,7 @@
               type="password"
               class="form-control"
               formControlName = "password"
-              [ngClass] = "{'is-invalid': submitted && form.password.errors}";
+              [ngClass] = "{'is-invalid': submitted && form.password.errors}"
             />
             <div class="text-warning">
               <div>Password is required</div>
@@ -95,6 +95,8 @@
           <input
             type="checkbox"
             id="acceptTerms"
+            formControlName = "acceptTandC"
+            [ngClass] = "{'is-invalid': submitted && form.acceptTandC.errors}"
           />
           <label for="acceptTerms" class="form-check-label">Accept Terms & Conditions</label>
           <div class="text-warning">
