@@ -29,6 +29,9 @@ export class AppComponent implements OnInit {
     });
   }
 
+  get form(){
+    return this.registerForm.controls;
+  }
   onSubmit(){
     this.submitted = true;
     if(this.registerForm.invalid){
